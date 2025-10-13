@@ -1,10 +1,10 @@
 name: golang-pipeline
 on: push
-jobs: 
-  test: 
+jobs:
+  test:
     runs-on: ubuntu-latest
     container: golang:1.22
-    steps: 
+    steps:
       - uses: actions/checkout@v4
 
       - name: Run Unit Tests
